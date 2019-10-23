@@ -19,6 +19,10 @@
 
 /* Styling column */
 
+[class^=col-] {
+    float: left;
+}
+
 .col-1 {
     width: calc((100% / 12) * 1);
 }
@@ -113,4 +117,61 @@
     margin-left: calc((100% / 12) * 11);
 }
 
-/* Styling offset */
+/* What's the point of styling an .offset-12?? */
+
+/* Styling right-empty */
+
+.right-empty-1 {
+    margin-right: calc((100% / 12) * 1);
+}
+
+.right-empty-2 {
+    margin-right: calc((100% / 12) * 2);
+}
+
+.right-empty-3 {
+    margin-right: calc((100% / 12) * 3);
+}
+
+.right-empty-4 {
+    margin-right: calc((100% / 12) * 4);
+}
+
+.right-empty-5 {
+    margin-right: calc((100% / 12) * 5);
+}
+
+.right-empty-6 {
+    margin-right: calc((100% / 12) * 6);
+}
+
+.right-empty-7 {
+    margin-right: calc((100% / 12) * 7);
+}
+
+.right-empty-8 {
+    margin-right: calc((100% / 12) * 8);
+}
+
+.right-empty-9 {
+    margin-right: calc((100% / 12) * 9);
+}
+
+.right-empty-10 {
+    margin-right: calc((100% / 12) * 10);
+}
+
+.right-empty-11 {
+    margin-right: calc((100% / 12) * 11);
+}
+
+/* What's the point of styling an .right-empty-12?? */
+
+/* Some styling in order to see if things work properly */
+
+[class^=col] {
+    height: 5vh;
+    background-image: linear-gradient(to right, rgb(250, 168, 117), rgb(243, 130, 245));
+    border: 2px solid magenta;
+    border-radius: 5px;
+}
