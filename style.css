@@ -6,12 +6,12 @@
 
 /* Styling container (row) */
 
-.row {
+.container {
     max-width: 95vw;
     margin: 0 auto;
 }
 
-.row::after {
+.container::after {
     display: table;
     clear: both;
     content: none;
@@ -21,6 +21,8 @@
 
 [class^=col-] {
     float: left;
+    padding: 5px 0;
+    text-align: center;
 }
 
 .col-1 {
@@ -170,8 +172,16 @@
 /* Some styling in order to see if things work properly */
 
 [class^=col] {
-    height: 5vh;
     background-image: linear-gradient(to right, rgb(250, 168, 117), rgb(243, 130, 245));
     border: 2px solid magenta;
     border-radius: 5px;
+}
+
+[class^=col] p {
+    color: black;
+    text-transform: uppercase;
+}
+
+* {
+    font-family: 'Nunito Sans', sans-serif;
 }
